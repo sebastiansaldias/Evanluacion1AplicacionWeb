@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldSpeak</title>
+    <link rel="stylesheet" href="CSS/index.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>WorldSpeak</h1>
+            <img src="\images\mundo.png" alt="Logo de la empresa">
+            
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+</body>
+<section class="seccion-dos-cards">
+    <div class="card">
+        <img src="\images\imagen1.png" alt="Imagen 1">
+    </div>
+    <div class="card">
+        <h2>¿Quiénes Somos?</h2>
+        <p>Somos una comunidad apasionada de lingüistas, educadores y entusiastas de los idiomas comprometidos con la misión de hacer que el aprendizaje de idiomas sea accesible y gratificante para todos.
+
+            En nuestra academia, nos esforzamos por ofrecer programas de enseñanza de idiomas de alta calidad que se adapten a las necesidades individuales de nuestros estudiantes. Creemos en un enfoque interactivo y envolvente que no solo enseñe gramática y vocabulario, sino que también fomente la comunicación práctica y la inmersión cultural.</p>
+        <a href="#comenzarahora" class="boton">Comenzar Ahora</a>
+    </div>
+</section>
+<section class="seccion-dos-cards">
+    <div class="card">
+        <h2>Nuestra Experiencia</h2>
+        <p>Tenemos años de experiencia en la enseñanza de una amplia gama de idiomas, desde inglés y español hasta francés, alemán, chino y más, estamos comprometidos a ayudar a nuestros estudiantes a alcanzar sus metas lingüísticas y a abrir nuevas puertas de oportunidades en el mundo globalizado de hoy.</p>
+        <a href="#Planes" class="boton">Conoce nuestros planes</a>
+    </div>
+    <div class="card">
+        <img src="\images\imagen2.png" alt="Imagen 2">
+    </div>
+    
+</section>
+<section class="seccion-docentes">
+    <div class="card-docente">
+        <img src="\images\ElenaGarcia.png" alt="Docente 1">
+        <h3>Elena García</h3>
+        <p>Profesora de portugués nativa con una pasión por compartir su lengua y cultura. Cuenta con amplia experiencia en la enseñanza de portugués como lengua extranjera.</p>
+        <p>Habilidades: Enseñanza del portugués, comprensión cultural, conversación práctica.</p>
+    </div>
+    <div class="card-docente">
+        <img src="\images\johnSmith.png" alt="Docente 2"> 
+        <h3>John Smith</h3>
+        <p>Instructor de inglés con enfoque en la comunicación efectiva y la fluidez. Especializado en preparación para exámenes internacionales como el TOEFL y el IELTS</p>
+        <p>Habilidades: Enseñanza del inglés, preparación para exámenes, desarrollo de habilidades comunicativas.</p>
+    </div>
+    <div class="card-docente">
+        <img src="\images\SophieDubois.png" alt="Docente 3">
+        <h3>Sophie Dubois</h3>
+        <p>Maestra de francés apasionada por la enseñanza y el aprendizaje de idiomas. Con experiencia en la enseñanza de francés como lengua extranjera en diferentes contextos educativos.</p>
+        <p>Habilidades: Enseñanza del francés, inmersión cultural, actividades interactivas.</p>
+    </div>
+</section>
+<footer>
+    <div class="perfil-alumno">
+        <img src="\images\Redes.png" alt="Foto de redes" width="20%">
+        <div class="Fecha">
+            <p>Mayo 2024</p>
+        </div>
+        <div class="info-alumno">
+            <p><a href="#" id="enlace-perfil">Desarollador</a></p>
+        </div>
+
+    </div>
+</footer>
+<script>
+    document.getElementById("enlace-perfil").addEventListener("click", function(event) {
+        event.preventDefault(); 
+        window.location.href = "perfil-alumno.html";
+    });
+</script>
+
+</html>
