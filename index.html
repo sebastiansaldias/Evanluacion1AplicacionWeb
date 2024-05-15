@@ -16,38 +16,44 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#cursos">Cursos</a></li>
-                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Cursos</a></li>
+                
                 
             </ul>
         </nav>
     </header>
 </body>
-<section class="seccion-dos-cards">
+<div class="seccion-dos-cards">
     <div class="card">
-        <img src="\images\imagen1.png" alt="Imagen 1">
+        <img src="\images\imagen1.png" alt="Imagen 1" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
     <div class="card">
         <h2>¿Quiénes Somos?</h2>
         <p>Somos una comunidad apasionada de lingüistas, educadores y entusiastas de los idiomas comprometidos con la misión de hacer que el aprendizaje de idiomas sea accesible y gratificante para todos.
 
             En nuestra academia, nos esforzamos por ofrecer programas de enseñanza de idiomas de alta calidad que se adapten a las necesidades individuales de nuestros estudiantes. Creemos en un enfoque interactivo y envolvente que no solo enseñe gramática y vocabulario, sino que también fomente la comunicación práctica y la inmersión cultural.</p>
-        <a href="#comenzarahora" class="boton">Comenzar Ahora</a>
+        <a href="index.html" class="boton">Comenzar Ahora</a>
     </div>
-</section>
-<section class="seccion-dos-cards">
+</div>
+
+<div class="seccion-dos-cards">
     <div class="card">
         <h2>Nuestra Experiencia</h2>
         <p>Tenemos años de experiencia en la enseñanza de una amplia gama de idiomas, desde inglés y español hasta francés, alemán, chino y más, estamos comprometidos a ayudar a nuestros estudiantes a alcanzar sus metas lingüísticas y a abrir nuevas puertas de oportunidades en el mundo globalizado de hoy.</p>
-        <a href="#Planes" class="boton">Conoce nuestros planes</a>
+        <a href="index.html" class="boton">Conoce nuestros planes</a>
     </div>
     <div class="card">
-        <img src="\images\imagen2.png" alt="Imagen 2">
+        <img src="\images\imagen2.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Imagen 2">
     </div>
     
-</section>
-<section class="seccion-docentes">
+</div>
+<div class="titulo-docentes">
+    <h3>Nuestros Docentes</h3>
+</div>
+
+<div class="seccion-docentes">
+    
     <div class="card-docente">
         <img src="\images\ElenaGarcia.png" alt="Docente 1">
         <h3>Elena García</h3>
@@ -62,18 +68,22 @@
     </div>
     <div class="card-docente">
         <img src="\images\SophieDubois.png" alt="Docente 3">
+
         <h3>Sophie Dubois</h3>
         <p>Maestra de francés apasionada por la enseñanza y el aprendizaje de idiomas. Con experiencia en la enseñanza de francés como lengua extranjera en diferentes contextos educativos.</p>
         <p>Habilidades: Enseñanza del francés, inmersión cultural, actividades interactivas.</p>
     </div>
-</section>
+</div>
 <footer>
-    <div class="perfil-alumno">
-        <img src="\images\Redes.png" alt="Foto de redes" width="20%">
+    <div class="perfil-desarrollador">
+        <img src="\images\telegram.png" style="width: 50px;" alt="Foto de redes" >
+        <img src="\images\youtube.png" style="width: 52px;" alt="Foto de redes" >
+        <img src="\images\linkedin.png" style="width: 54px;" alt="Foto de redes" >
+        <img src="\images\wsp.png" style="width: 59px;" alt="Foto de redes" >
         <div class="Fecha">
-            <p>Mayo 2024</p>
+            <p>Talca, 2024</p>
         </div>
-        <div class="info-alumno">
+        <div class="info-desarollador">
             <p><a href="#" id="enlace-perfil">Desarollador</a></p>
         </div>
 
@@ -82,7 +92,7 @@
 <script>
     document.getElementById("enlace-perfil").addEventListener("click", function(event) {
         event.preventDefault(); 
-        window.location.href = "perfil-alumno.html";
+        window.location.href = "perfil-desarrollador.html";
     });
 </script>
 

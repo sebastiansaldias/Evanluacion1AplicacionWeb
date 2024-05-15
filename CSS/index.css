@@ -1,5 +1,6 @@
-.box {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+body {
+    background-color: #ffffff; 
+    color: #333; 
 }
 
 
@@ -11,18 +12,20 @@
     align-items: center;
 }
 body {
-    font-family: "Arial", sans-serif;
+    font-family: "calibri", sans-serif;
 }
 
 
 
 
 header {
-    background-color: #78b8de; 
+    background-color: #45b2f1; 
     padding: 10px 20px; 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
+    
+   
 }
 
 .logo {
@@ -61,7 +64,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #555; 
+    background-color: #35aaee; 
 }
 
 
@@ -77,21 +80,24 @@ nav ul li a:hover {
 .card {
     flex: 1; 
     padding: 20px; 
-    background-color: #f1f1f1; 
-    border-radius: 8px; 
+    background-color: #0cb7f2; 
     text-align: center; 
     height: 300px; 
+    position: relative;
+    overflow: hidden;
 }
 
 .card img {
-    max-width: 60%; 
+    max-width: 100%; 
+    height: auto; 
     border-radius: 8px; 
 }
+
 
 .boton {
     display: inline-block; 
     padding: 10px 20px; 
-    background-color: #333; 
+    background-color: #2765f6; 
     color: #fff; 
     text-decoration: none; 
     border-radius: 5px; 
@@ -99,43 +105,54 @@ nav ul li a:hover {
 }
 
 .boton:hover {
-    background-color: #555; 
+    background-color: #35aaee; 
 }
 
 
-/* Estilos para la sección de docentes */
+/* Estilos para las cards de docente*/
+.titulo-docentes {
+    text-align: center;
+}
+
 .seccion-docentes {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    margin-top: 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    margin-top: 20px;
 }
 
 .card-docente {
-    flex: 1; 
-    padding: 20px; 
-    background-color: #f1f1f1; 
-    border-radius: 8px; 
-    text-align: center; 
+    flex: 1;
+    padding: 20px;
+    background-color: #7cdaf9;
+    border-radius: 40px;
+    text-align: center;
+    margin-right: 30px; 
+}
+
+.card-docente:last-child {
+    margin-right: 0;
 }
 
 .card-docente img {
-    max-width: 100%; 
-    border-radius: 8px; 
+    max-width: 100%;
+    border-radius: 8px;
 }
 
 .card-docente h3 {
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 .card-docente p {
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 
 
+/* Estilos de footer*/
+
 footer {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     padding: 20px;
 }
 
@@ -145,7 +162,7 @@ footer {
     align-items: center; 
 }
 
-.perfil-alumno {
+.perfil-desarollador {
     flex: 1; 
 }
 
@@ -154,11 +171,67 @@ footer {
     text-align: center; 
 }
 
-.info-alumno {
+.info-desarollador {
     flex: 1; 
     text-align: right; 
 }
 .footer-container {
     display: flex;
     align-items: center; 
+}
+
+
+
+
+/* responsividad */
+@media only screen and (max-width: 600px) {
+    .seccion-dos-cards,
+    .seccion-docentes {
+        flex-direction: column; 
+    }
+
+    .card,
+    .card-docente {
+        width: 90%; 
+        margin-bottom: 20px; 
+    }
+}
+
+
+
+
+/* Estilos para la página de perfil del desarrollador */
+body.perfil-desarollador {
+    background-color: #000; 
+    color: #fff; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+.perfil-desarollador header,
+.perfil-desarollador .info-desarollador,
+.perfil-desarollador footer {
+    text-align: center; 
+}
+
+.perfil-desarollador footer a {
+    color: #fff; 
+}
+
+.info-desarollador img {
+    max-width: 350px; 
+    border-radius: 50%;
+    margin-bottom: 20px; 
+}
+
+.info-desarollador a {
+    color: #007bff; 
+    text-decoration: none;
+}
+
+.info-desarollador a:hover {
+    text-decoration: underline; 
 }
