@@ -1,6 +1,10 @@
 body {
     background-color: #ffffff; 
-    color: #333; 
+    color: #333;
+    font-family: "calibri", sans-serif;
+    margin: 0;
+    padding: 0;
+
 }
 
 
@@ -11,9 +15,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-body {
-    font-family: "calibri", sans-serif;
-}
+
 
 
 
@@ -24,8 +26,7 @@ header {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    
-   
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .logo {
@@ -70,27 +71,46 @@ nav ul li a:hover {
 
 
 /* Estilos para las primeras cards */
-.seccion-dos-cards {
+.seccion-cards {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    margin-top: 20px; 
+    margin-top: 30px; 
+
 }
 
 .card {
     flex: 1; 
-    padding: 20px; 
-    background-color: #0cb7f2; 
+    padding: 10px; 
+    background-color: #7cdaf9; 
     text-align: center; 
     height: 300px; 
     position: relative;
     overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .card img {
-    max-width: 100%; 
+    width: 450px;
+    
     height: auto; 
     border-radius: 8px; 
+}
+
+.card1 {
+    flex: 1;  
+    background-color: #ffffff; 
+    height: 320px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); 
+    
+}
+.card-img-1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 
@@ -116,8 +136,8 @@ nav ul li a:hover {
 
 .seccion-docentes {
     display: flex;
-    justify-content: space-between;
-    align-items: stretch; 
+    justify-content: space-around;
+    padding: 20px;
     margin-top: 20px;
 }
 
@@ -128,24 +148,15 @@ nav ul li a:hover {
     border-radius: 40px;
     text-align: center;
     margin-right: 30px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.card-docente:last-child {
-    margin-right: 0;
-}
 
 .card-docente img {
     max-width: 100%;
     border-radius: 8px;
 }
 
-.card-docente h3 {
-    margin-top: 10px;
-}
-
-.card-docente p {
-    margin-top: 10px;
-}
 
 
 
@@ -185,16 +196,30 @@ footer {
 
 /* responsividad */
 @media only screen and (max-width: 600px) {
-    .seccion-dos-cards,
+    .seccion-cards,
     .seccion-docentes {
         flex-direction: column; 
     }
-
+    .card1 {
+        flex: 1;  
+        background-color: #ffffff; 
+        border-radius: 8px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); 
+        margin-bottom: 20px;
+        width: 95%;
+        
+    }
+    .card img {
+        width: 300px;
+        height: auto; 
+        border-radius: 8px; 
+    }
     .card,
     .card-docente {
         width: 90%; 
-        margin-bottom: 20px; 
+        margin-bottom: 10px; 
     }
+    
 }
 
 
@@ -235,3 +260,31 @@ body.perfil-desarollador {
 .info-desarollador a:hover {
     text-decoration: underline; 
 }
+
+
+
+/* Estilos para  Conoce Nuestros Planes*/
+
+.nuestrosplanes {
+    text-align: center;
+}
+
+.planes {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.card-nuestrosplanes {
+    flex: 1;
+    padding: 20px;
+    background-color: #7cdaf9;
+    border-radius: 40px;
+    text-align: center; 
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
