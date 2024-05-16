@@ -17,7 +17,7 @@ body {
 }
 
 
-
+/* Estilos para el header*/
 
 
 header {
@@ -93,9 +93,9 @@ nav ul li a:hover {
 
 .card img {
     width: 450px;
-    
     height: auto; 
-    border-radius: 8px; 
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);  
 }
 
 .card1 {
